@@ -112,7 +112,7 @@ export default function page() {
                 <p className='my-10 text-fg-secondary'>A collection of projects I’ve worked on — from personal builds to small experiments where I explored new ideas and improved my skills.</p>
             </div>
             <div>
-                <div className='grid grid-cols-2  gap-16'>
+                <div className='grid grid-cols-1 xl:grid-cols-2  gap-16'>
                     {projects.map(p => (
                         <div
 

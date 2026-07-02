@@ -62,13 +62,14 @@ export default function page() {
             <div className='mt-10'>
                 <div className='flex items-center justify-between'>
                     <h2 className='font-bold text-4xl text-primary-foreground '>Rupon Anthony Gomez </h2>
-                    <Link target='_blank' href={"https://drive.google.com/file/d/14Wa-Tpk8mGb9yXjdAwUbMgA20n3dhKAF/view?usp=sharing"} className='bg-blue-600 hover:bg-blue-700 px-4 py-1 rounded-md font-mono font-semibold flex items-center gap-1 text-sm text-primary-foreground'><FaDownload />Download PDF</Link>
+                    <Link target='_blank' href={"https://drive.google.com/file/d/14Wa-Tpk8mGb9yXjdAwUbMgA20n3dhKAF/view?usp=sharing"} className='bg-blue-600  hover:bg-blue-700 px-4 py-1 rounded-md font-mono font-semibold flex items-center gap-1 text-sm text-primary-foreground w-36'><FaDownload />Download PDF</Link>
                 </div>
                 <h4 className='text-blue-400 text-lg text-opacity-95'>Junior Full-Stack Software Developer</h4>
 
-                <div className='mt-6 flex gap-4'>
+                <div className='mt-6 xl:flex  gap-4'>
                     <p className='flex items-center gap-[1px]'><FaLocationDot className='text-red-500' /> Dhaka, Bangladesh</p>
-                    <p className='flex items-center gap-[1px]'><IoLogoWhatsapp className='text-green-500' /> <a target='_blank' href="https://wa.me/+8801998020978">+880 1998 020978</a></p>
+                    <p className='flex items-center gap-[1px]'><IoLogoWhatsapp className='text-green-500' />
+                        <a target='_blank' href="https://wa.me/+8801998020978">+880 1998 020978</a></p>
                     <p className='flex items-center gap-[1px]'><IoIosMail className='text-xl' /> <a className='underline text-blue-400' href="mailto:rupongomez@gmail.com">rupongomez@gmail.com</a></p>
                 </div>
 

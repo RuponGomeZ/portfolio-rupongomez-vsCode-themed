@@ -35,7 +35,7 @@ export default function page() {
 
             <h2 className='my-8'>I’m almost always online—either at my computer or on my phone. Feel free to reach out anytime, and I’ll get back to you as soon as I can.</h2>
 
-            <div className='grid grid-cols-2 gap-10 w-full justify-around'>
+            <div className='grid grid-cols-1 xl:grid-cols-2 gap-10 w-full justify-around'>
 
                 <div><ContactPageJsonCode /></div>
                 <div><MessageForm /></div>

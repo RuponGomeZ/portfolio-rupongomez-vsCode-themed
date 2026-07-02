@@ -35,10 +35,10 @@ export default function TabsControl({ existedTab, setExistedTab }) {
                 {existedTab.map((tab, i) => {
                     const Icon = tab?.icon
                     return (
-                        <div key={tab.route || i} className='relative'>
+                        <div key={tab.route || i} className='relative '>
                             <Link
                                 href={tab.route}
-                                className={`${pathName === tab?.route ? "border-t-2 border-t-blue-600 " : " bg-slate-800/80 text-neutral-200"} border-r-[1px] bg-base-200   border-r-neutral-500 w-fit h-9 bg-transparent pl-4 py-0
+                                className={`${pathName === tab?.route ? "border-t-2 border-t-blue-600 " : " bg-slate-800 text-neutral-400"} border-r-[1px] bg-base-200   border-r-neutral-500 w-fit h-9 bg-transparent pl-4 py-0
                                  pr-6 text-sm italic flex `}>
                                 <div className='flex items-center '>
                                     <Icon className={`${tab?.iconClass} mr-1`} />
@@ -47,7 +47,7 @@ export default function TabsControl({ existedTab, setExistedTab }) {
                             </Link>
                             <button
                                 onClick={() => handleTabClose(tab.route)}
-                                className='text-neutral-600 absolute top-[6px] right-2'>x</button>
+                                className='text-neutral-400 absolute top-[2px] right-2 p-1 hover:text-red-400'>x</button>
                         </div>
                     )
                 })}

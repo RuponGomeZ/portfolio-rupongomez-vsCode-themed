@@ -66,7 +66,7 @@ export default function page() {
 
             <SplashCursor />
 
-            <div className='grid grid-cols-2  gap-16'>
+            <div className='grid grid-cols-1 xl:grid-cols-2  gap-16'>
                 {skills.map(skill => (
                     <AnimatedContent
                         distance={100}
