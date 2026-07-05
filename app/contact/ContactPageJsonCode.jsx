@@ -29,14 +29,18 @@ export default function ContactPageJsonCode() {
                 <SyntaxHighlighter language="javascript" style={sunburst}>
                     {`
 const contactInfo = {
-  name: "Rupon Anthony Gomes",
-  role: "Full Stack Developer",
-  email: "rupongomez@gmail.com",
-  location: "Dhaka, Bangladesh",
+  name:         "Rupon Anthony Gomez",
+  role:         "Full Stack Developer",
+
+  email:        "rupongomez@gmail.com",
+  phone:        "+8801998020978",
+  whatsapp:     "+8801998020978",
+
+  location:     "Dhaka, Bangladesh",
   responseTime: "Within 24 hours",
 
   social: {
-    github: "https://github.com/RuponGomeZ",
+    github:   "https://github.com/RuponGomeZ",
     linkedin: "https://www.linkedin.com/in/rupongomez/",
     whatsapp: "https://wa.me/8801998020978"
   }

@@ -74,6 +74,7 @@ export default function NavigationIcons() {
         const checkIfAlreadyExist = existedTab.find(t => t.route === pathName)
         if (checkIfAlreadyExist) return
         const findTab = tabs.find(tab => tab.route === pathName)
+        if (!findTab) return
         const currentTab = [...existedTab, findTab]
         setExistedTab(currentTab)
     }, [pathName])
@@ -92,7 +93,7 @@ export default function NavigationIcons() {
                         </Link>
                         <Link className={`${pathName === '/experience' ? " border-l-2 border-blue-400" : "border-l-2 border-transparent"}`} href={"/experience"}><IoBriefcase className="icons-custom" /></Link>
                         <Link className={`${pathName === '/skills' ? " border-l-2 border-blue-400" : "border-l-2 border-transparent"}`} href={"/skills"}><FaCode className="icons-custom" /></Link>
-                        <Link className={`${pathName === '/projects' ? " border-l-2 border-blue-400" : "border-l-2 border-transparent"}`} href={"/projects"}><PiMonitorFill className="icons-custom" /></Link>
+                        <Link className={`${(pathName === '/projects' || pathName === '/projects/') ? " border-l-2 border-blue-400" : "border-l-2 border-transparent"}`} href={"/projects"}><PiMonitorFill className="icons-custom" /></Link>
                         <Link className={`${pathName === '/achievements' ? " border-l-2 border-blue-400" : "border-l-2 border-transparent"}`} href={"achievements"}><SlBadge className="icons-custom" /></Link>
                         {/* <Link className={`${pathName === '/courses' ? " border-l-2 border-blue-400" : "border-l-2 border-transparent"}`} href={"/courses"}>< FaBookOpen className="icons-custom" /></Link> */}
                         {/* <Link className={`${pathName === '/' ? " border-l-2 border-blue-400" : "border-l-2 border-transparent"}`} href={""}><FaGraduationCap className="icons-custom" /></Link> */}
