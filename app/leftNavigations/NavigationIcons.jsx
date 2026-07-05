@@ -5,7 +5,7 @@ import { FaCode, FaFileAlt, FaFileImage, FaGraduationCap, FaTerminal } from "rea
 import { FaUser } from "react-icons/fa";
 import { MdContactPage, MdHome, MdOutlineKeyboardArrowRight, MdSend, MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { FaBookOpen } from "react-icons/fa";
-import { SlBadge } from "react-icons/sl";
+import { SlBadge, SlSocialInstagram } from "react-icons/sl";
 import { PiMonitorFill } from "react-icons/pi";
 import { FaGear } from "react-icons/fa6";
 import Link from 'next/link';
@@ -98,6 +98,7 @@ export default function NavigationIcons() {
                         {/* <Link className={`${pathName === '/' ? " border-l-2 border-blue-400" : "border-l-2 border-transparent"}`} href={""}><FaGraduationCap className="icons-custom" /></Link> */}
                         <Link className={`${pathName === '/terminal' ? " border-l-2 border-blue-400" : "border-l-2 border-transparent"}`} href={"/terminal"}><FaTerminal className="icons-custom" /></Link>
                         <Link className={`${pathName === '/contact' ? " border-l-2 border-blue-400" : "border-l-2 border-transparent"}`} href={"/contact"}><IoIosMailOpen className="icons-custom" /></Link>
+                        <Link className={`${pathName === '/social' ? " border-l-2 border-blue-400" : "border-l-2 border-transparent"}`} href={"/social"}><SlSocialInstagram className="icons-custom" /></Link>
                         <Link className={`${pathName === '/resume' ? " border-l-2 border-blue-400" : "border-l-2 border-transparent"}`} href={"/resume"}><FaFileAlt className="icons-custom" /></Link>
                     </ul>
                     <div className='mb-3 flex'>
@@ -138,6 +139,7 @@ export default function NavigationIcons() {
                                 <Link href={"/terminal"} className={`${pathName === '/terminal' ? "active" : ""} file-names`}><LuFileTerminal className='text-gray-300' /><span>terminal.sh</span> </Link>
                                 <Link href={"/contact"} className={`${pathName === '/contact' ? "active" : ""} file-names`}><FaFileCode className='text-blue-300' /><span>contact.css</span> </Link>
                                 {/* <Link href={"/"} className={`${pathName === '/d' ? "active" : ""} file-names`}><FaFileImage className='text-green-400' /><span>newsletter.config</span> </Link> */}
+                                <Link href={"/social"} className={`${pathName === '/social' ? "active" : ""} file-names`}><FaFileCode className='text-blue-300' /><span>social.ts</span></Link>
                                 <Link href={"/resume"} className={`${pathName === '/resume' ? "active" : ""} file-names`}><TbFileCv className='text-red-400' /><span>resume.pdf</span></Link>
                             </ul>
                         </div>

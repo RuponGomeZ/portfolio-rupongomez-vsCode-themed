@@ -63,6 +63,13 @@ export const tabs = [
         iconClass: "text-blue-300",
     },
     {
+        name: "Social",
+        tabName: "social.ts",
+        route: "/social",
+        icon: FaFileCode,
+        iconClass: "text-blue-400",
+    },
+    {
         name: "resume",
         tabName: "resume.pdf",
         route: "/resume",
